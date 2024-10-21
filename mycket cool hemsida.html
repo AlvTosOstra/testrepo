@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="script-no-search.js">
+    
+
+    </script>
+</head>
+<body>
+    <div>
+        <input id="station" type="text" onkeydown="checkEnterKey(event)"/>
+        <input type="button" value="Visa" onclick="javascript: Search()" />
+        <span id="loader" style="margin-left: 10px">Laddar data ...</span>
+    </div>
+    <div id="result">
+        <h3>Avgående tåg</h3>
+        <table border="1" id="timeTableDeparture">
+                      <tr>
+                        <th scope="col" style="width:40px;">Tid</th>
+                        <th scope="col" style="width:200px;">Till</th>
+                        <th scope="col" style="width:80px;"></th>
+                        <th scope="col" style="width:80px;"></th>
+                        <th scope="col" style="width:80px;">Spår</th>
+
+                      </tr>
+                    </table>
+                  </div>
+</body>
+</html>
